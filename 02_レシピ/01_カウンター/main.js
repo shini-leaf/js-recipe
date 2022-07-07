@@ -1,10 +1,11 @@
-// eslint-disable-next-line no-unused-vars
-const genkiFunction = (number) => {
-  for (let n = 1; n <= number; n++) {
-    if (n % 3 === 0) {
-      console.log(`${n}!!!!!!!`)
-    } else {
-      console.log(n)
-    }
-  }
+const display = document.getElementById("display")
+const plusButton = document.getElementById("plus-button")
+
+let count = 0
+
+// ボタンをクリックしたときの処理を登録
+plusButton.onclick = function () {
+  // ここにクリック後の処理を書く
+  count += 1
+  display.textContent = count
 }
