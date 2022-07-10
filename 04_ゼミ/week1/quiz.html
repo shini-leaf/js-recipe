@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>WebExpertコーステンプレート</title>
+  </head>
+  <body>
+    <h1>鱩</h1>
+    <p>これ，なんてよむ？？</p>
+    <button id="a">ライギョ</button>
+    <button id="b">ハタハタ</button>
+    <button id="c">ウナギ</button>
+    <div id="answer">こたえ</div>
+    <script>
+      const a = document.getElementById("a")
+      const b = document.getElementById("b")
+      const c = document.getElementById("c")
+
+      a.onclick = function () {
+        answer.textContent = "不正解です！！そのまんまじゃん！"
+      }
+
+      b.onclick = function () {
+        answer.textContent =
+          "正解です！おめでとうございます🎊🎉\nハタハタとは古代に雷の音を模した擬音語だそうです。ですから、今名前をつけるとしたら「ゴロゴロ」ですね笑"
+      }
+
+      c.onclick = function () {
+        answer.textContent =
+          "不正解です！！電気ウナギのイメージから間違えたかも...？"
+      }
+    </script>
+  </body>
+</html>
